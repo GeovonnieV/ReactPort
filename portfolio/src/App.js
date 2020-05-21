@@ -1,7 +1,7 @@
 import React from "react"
 import About from "./components/About"
 import Projects from "./components/Projects"
-import Contact from './components/Contact';
+import Contact from './components/contact/Contact';
 import Nav from "./components/Nav"
 import {BrowserRouter as Router, Switch, Route } from "react-router-dom"
 

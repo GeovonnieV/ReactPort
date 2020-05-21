@@ -7,15 +7,16 @@ function Nav() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around",
-        background: "#A9A9A9",
-        color: "#1db9b5"
+        color: "#1db9b5",
+        backgroundImage: "url(https://c4.wallpaperflare.com/wallpaper/847/890/558/line-grey-background-lines-fon-hd-wallpaper-preview.jpg)",
+        
 
     }
 
     
     return (
         <nav style={style}>
-            <h3>logo</h3>
+            <h3>Geovonnies Portfolio</h3>
             <ul>
                 {/* 1st link */}
                 <Link to="/projects">
@@ -24,6 +25,10 @@ function Nav() {
                 {/* 2nd link */}
                 <Link to="/contact">
                 <li>Contact</li>
+                </Link>
+                {/* 3rd link */}
+                <Link to="/">
+                <li>about</li>
                 </Link>
             </ul>
         </nav>
