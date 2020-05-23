@@ -4,31 +4,35 @@ import { Button, Card} from 'react-bootstrap';
 
 const CardComp = props => {
     
-    return(
-        // <div className="card text-center">
-        //     <div className="overflow">
-        //         <img src={image1} alt="" />
-        //     </div>
-        //     {/*  */}
-        //     <div className="card-body text-dark">
-        //         <h4 className="card-title">Card title</h4>
-        //         <p className="card-text text-secondary">
-        //             card text
-        //         </p>
-        //         <a href="#" className="btn btn-outline-success">go anywhere</a>
-        //     </div>
-        // </div>
+    const cardBody = {
+        fontSize: "14px"
+    }
 
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={image1} />
+    const cardHead = {
+        fontSize: "16px"
+    }
+
+    const buttonSize = {
+        fontSize: "8px",
+        margin: "5px"
+    }
+
+    const im = {
+        maxHeight: "120px"
+    }
+
+    return(
+     
+        <Card>
+            <Card.Img variant="top" src={props.image} style={im}/>
         <Card.Body>
-            <Card.Title>Name Of Card</Card.Title>
-            <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
+            <div style={cardHead}>{props.head}</div>
+            <u></u>
+            <Card.Text style={cardBody}>
+                {props.detail}
              </Card.Text>
-            <Button variant="primary">Git Hub</Button>
-            <Button variant="primary">Open Project</Button>
+             <Button style={buttonSize} href={props.link}>Open Project</Button> 
+             <Button style={buttonSize} href={props.gitLink}>GitHub</Button> 
         </Card.Body>
         </Card>
 

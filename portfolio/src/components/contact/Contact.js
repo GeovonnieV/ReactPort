@@ -10,7 +10,7 @@ function Contact() {
       minWidth: "100%",
       minHeight: "100%",
       backgroundSize: "cover",
-      position: "fixed"
+      
       
     }
 
@@ -25,7 +25,7 @@ function Contact() {
     return (
     <div style={contactStyle}>
         <h1>Contact Me</h1>
-
+       
          {/* email input */}
         <Form className="back">
         <Form.Group controlId="formBasicEmail">

@@ -1,6 +1,6 @@
 import React from "react"
 import {Accordion, Card, Button, Container, Row, Col, Image} from "react-bootstrap"
-// import me from "../../src/assets"
+import img1 from "../assets/me.jpeg"
 
 const About = () => {
 
@@ -10,8 +10,6 @@ const About = () => {
         minWidth: "100%",
         minHeight: "100%",
         backgroundSize: "cover",
-        position: "fixed"
-        
       }
 
     const head = {
@@ -23,10 +21,19 @@ const About = () => {
         display: "block",
         marginLeft: "auto",
         marginRight: "auto",
-        width: "50%"
+        width: "50%",
+        textAlign: "center"
     }
     
-     
+    const img = {
+        maxWidth: "300px",
+        width: "100%",
+        
+    }
+    
+    const butnSize = {
+        margin: "5px"
+    }
 
     return(
     <div style={aboutStyle}>
@@ -34,7 +41,7 @@ const About = () => {
         <h2 style={head}>About Me</h2>
 
         <Container style={centerImg}>
-            <Image src="https://placekitten.com/200/139" roundedCircle />
+            <Image style={img} src={img1} roundedCircle />
         </Container>       
 
     <Accordion defaultActiveKey="0">
@@ -91,9 +98,9 @@ const About = () => {
     </Accordion> 
     <br></br>
         {/* linkdin btn */}
-    <Button href="#">LinkedIn</Button>
+    <Button href="https://www.linkedin.com/feed/" style={butnSize}>LinkedIn</Button>
         {/* github btn */}
-    <Button href="#">GitHub</Button>
+    <Button href="https://github.com/GeovonnieV">GitHub</Button>
 
     </div>
 

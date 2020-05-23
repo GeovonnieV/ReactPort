@@ -19,16 +19,16 @@ function Nav() {
             <h3>Geovonnies Portfolio</h3>
             <ul>
                 {/* 1st link */}
+                <Link to="/">
+                <li>About</li>
+                </Link>
+                {/* 2nd link */}
                 <Link to="/projects">
                 <li>Projects</li>
                 </Link>
-                {/* 2nd link */}
+                {/* 3rd link */}
                 <Link to="/contact">
                 <li>Contact</li>
-                </Link>
-                {/* 3rd link */}
-                <Link to="/">
-                <li>about</li>
                 </Link>
             </ul>
         </nav>
